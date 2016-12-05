@@ -17,10 +17,12 @@ $(document).ready(function(){
         $("#next").on('click', function(){
           nx();
           info(count);
+          danger(count);
         });//end on next click
         $("#prev").on('click', function(){
           pv();
           info(count);
+          danger(count);
         });//end on prev click
         function info(x){
           if (tau[x].first_name == 'Deforis') {
@@ -32,6 +34,13 @@ $(document).ready(function(){
             $('#amount').html((x * 1 + 1) + "/" + tau.length);
             $('#desc').html("<p>" + tau[x].info + "</p>");
         }//end info
+        function danger(x){
+          if(tau[x].first_name == "Jacob"){
+            $('.click').addClass("btn-danger");
+          }else{
+            $('.click').removeClass("btn-danger");
+          }
+        }//end danger
       }//end success
     });//end ajax
     function nx(x){

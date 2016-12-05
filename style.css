@@ -17,12 +17,8 @@
 #prev{
 float:left;
 }
-#pic{
-  border: solid red 5px;
-}
 
 #info{
-  border: solid blue 5px;
   text-align: center;
 }
 
@@ -38,11 +34,10 @@ img{
 
 }
 
-#desc{
-  border: solid purple 5px;
-}
+
 #aloha{
-  border: solid yellow 5px;
+  border: solid black 5px;
+  border-top: 0px;
   bottom:0;
   text-align: center;
   width: 30%;
