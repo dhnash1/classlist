@@ -73,3 +73,4 @@ $(document).ready(function(){
       }// end if
     }//end pv
 });//end doc ready
+//note to self: if I had more time, i would un-hard code these counter thingies here.
