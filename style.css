@@ -1,0 +1,50 @@
+#box{
+  border: solid black 5px;
+  width: 30%;
+  margin: 0px auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.stuDis{
+  text-align: center;
+  border: solid red 5px;
+}
+
+#next{
+  float: right;
+}
+#prev{
+float:left;
+}
+#pic{
+  border: solid red 5px;
+}
+
+#info{
+  border: solid blue 5px;
+  text-align: center;
+}
+
+img{
+  width:100%;
+  height: 100%;
+  margin: 0px auto;
+  display: block;
+}
+
+#amount{
+  display:inline;
+
+}
+
+#desc{
+  border: solid purple 5px;
+}
+#sel{
+  border: solid yellow 5px;
+  bottom:0;
+  text-align: center;
+  width: 30%;
+  margin: 0px auto;
+}
