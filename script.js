@@ -26,8 +26,15 @@ $(document).ready(function(){
       for (var i = 0; i < data.tau.length; i++) {
         console.log(data.tau);
         var tau = data.tau;
+        $('#sel').append("<option value='" + [i] + "'>" + tau[i].first_name + "</option>");
         info(count);
       }//end for loop
+        $("#go").on('click', function(){
+          var bawx = $('#sel').val();
+          console.log(bawx);
+          info(bawx);
+          count = bawx;
+        });
         $("#next").on('click', function(){
           console.log('next');
           nx();
@@ -48,17 +55,18 @@ $(document).ready(function(){
             $('#amount').html((x * 1 + 1) + "/" + tau.length);
             $('#desc').html("<p>" + tau[x].info + "</p>");
         }//end info
+
       }//end success
     });//end ajax
     function nx(x){
-      count = count + 1;
+      count = count * 1 + 1;
       console.log(count);
       if(count > 14){
         count = 0;
       }// end if
     }// end nx
     function pv(x){
-      count = count - 1;
+      count = count * 1 - 1;
       console.log(count);
       if (count < 0 ){
         count = 14;
